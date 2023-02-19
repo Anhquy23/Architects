@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    max-width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px #ccc;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hd1 a{
+    color: black;
+    padding: 8px 8px;
+    margin-left:8px ;
+}
+
+.hd1 a:hover{
+    background-color: #ccc;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.nav ul li a{
+    color: black;
+    padding: 8px 8px;
+}
+
+.nav ul li a:hover{
+    background-color: #ccc;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.banner img{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-new{
+    display: flex;
+    position: absolute;
+    top: 42%;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-new p:first-child{
+    padding: 16px 20px;
+    font-size: 40px;
+    color: white;
+    background-color: #000 ;
+    opacity: 0.7;
+    font-weight: 700;
+}
+
+.banner-new p:last-child{
+    padding: 16px 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.projects{
+    margin-top: 30px;
+}
+
+.projects p{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.projects hr{
+    margin: 40px 0;
+    color: #ccc;
+}
+
+.product{
+    margin: 20px 0;
+}
+
+.item {
+    position: relative;
+}
+
+.item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.item p{
+    position: absolute;
+    top: 0px;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.about .head p:first-child{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.about hr{
+    margin: 30px 0;
+    color: #ccc;
+}
+
+.about .head p:last-child{
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+.user img{
+    max-width: 100%;
+    height: auto;
+}
+
+.user h1{
+    font-weight: normal;
+    padding: 16px 0;
+}
+
+.user p{
+    font-size: 18px;
+    padding: 4px 0;
+}
+
+.user p:nth-child(3){
+    color:#ccc;
+}
+
+.user button{
+    background-color: #f1f1f1;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: none;
+}
+
+.user button:hover{
+    background-color: #ccc;
+}
+
+.contact p:first-child{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.contact hr{
+    margin: 30px 0;
+    color: #ccc;
+}
+
+.contact p:last-child{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+.info button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    padding: 10px 12px;
+    font-size: 16px;
+    margin: 24px 0 40px 0;
+    border: none;
+}
+
+.info button:hover{
+    background-color: #ccc;
+}
+
+.info img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* reponsive */
+@media (max-width: 740px){
+        .row{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        
+        .nav{
+            display: none;
+        }
+        .projects p:nth-child(1), .about .head p:first-child, .about .head p:last-child, .projects hr, .head hr{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .user {
+            margin-bottom: 12px;
+        }
+
+        .img img, .item img{
+            width: 700px;
+        }
+
+        .item{
+            margin-bottom: 12px;
+        }
+
+        .banner-new p:last-child{
+            display: none;
+        }
+        .banner-new p:first-child{
+            padding: 12px 16px;
+            font-size: 36px;
+            
+        }
+}
+
+@media(max-width: 1023px) {
+    .item, .user {
+        margin-bottom: 12px;
+    }
+
+    .product {
+        margin: 0px;
+    }
+}
+
+
